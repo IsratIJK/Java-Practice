@@ -28,8 +28,8 @@ class Calc implements ActionListener{
     public void actionPerformed(ActionEvent e){
         if(e.getSource()==b)
         tf.setText(Double.parseDouble(tf.getText())*80+" "+"BDT");
-        else if (e.getSource()==r)
-        tf.setText("0");
+        // else if (e.getSource()==r)
+        // tf.setText("0");
     }
     public static void main(String[] args){
         new Calc();

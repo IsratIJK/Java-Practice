@@ -7,12 +7,14 @@ class TicTacToe implements ActionListener{
     JFrame frame;
     JButton a,b,c,d,e,f,g,h,i;
     JTextField tf;
+    JPanel pl;
  
 
     public TicTacToe(){
         frame=new JFrame("Tic Tac Toe");
         frame.setLayout(new GridLayout(3,3));
         frame.setSize(300,300);
+        pl=new JPanel();
 
 
        a=new JButton();
@@ -48,7 +50,8 @@ class TicTacToe implements ActionListener{
 
         frame.setVisible(true);
         tf=new JTextField();
-        f.add(tf);
+        pl.add(tf);
+        frame.add(pl);
 
     }
     public void actionPerformed(ActionEvent e){
